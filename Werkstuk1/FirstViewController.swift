@@ -12,13 +12,18 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     let voornamen = ["geordy", "sara", "test"]
     let achternamen = ["van cutsem", "van cutsem", "klein"]
     
+    @IBOutlet weak var voornaamLabel: UILabel!
     @IBOutlet var tableView: UITableView!
+    
+    @IBOutlet weak var achternaamLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return voornamen.count
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         
     }
